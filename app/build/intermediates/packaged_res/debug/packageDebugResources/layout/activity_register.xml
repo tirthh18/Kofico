@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.register">
+
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/nbold"
+        android:gravity="center"
+        android:text="Create Your Account"
+        android:textColor="#634C4C"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/register_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_title"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="5dp"
+        android:fontFamily="@font/nmedium"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:text="Get ready to make some spicyzz"
+        android:textColor="#634C4C"/>
+
+    <ScrollView
+        android:id="@+id/idScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="40dp"
+        android:layout_below="@id/register_sub_title">
+
+        <LinearLayout
+            android:id="@+id/register_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/register_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:fontFamily="@font/nmedium"
+                android:hint="Full Name"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:fontFamily="@font/nmedium"
+                android:hint="Username"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:fontFamily="@font/nmedium"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:fontFamily="@font/nmedium"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idScroll"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg"
+        android:fontFamily="@font/nmedium"
+        android:text="REGISTER"
+        android:textColor="#FFFDFD"
+        android:textSize="16dp" />
+</RelativeLayout>

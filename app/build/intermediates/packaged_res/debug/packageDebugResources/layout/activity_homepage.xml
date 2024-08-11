@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/roundstylebig"
+                android:backgroundTint="@color/colorprimary" />
+
+            <TextView
+                android:id="@+id/search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_with_radiusnew"
+                android:elevation="5dp"
+                android:fontFamily="@font/nmedium"
+                android:gravity="center"
+                android:padding="13dp"
+                android:text="Coffee shop near me"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="11dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nbold"
+                android:text="Our product"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_all_item"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bottom_navigationView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="2dp"-->
+    <!--        android:background="@color/bottom_nav_background"-->
+    <!--        app:drawable="@drawable/bottom_nav_menu"-->
+    <!--        app:itemIconTint="@drawable/bottom_nav_colors"-->
+<!--        app:itemTextColor="@drawable/bottom_nav_colors" />-->
+
+</RelativeLayout>
