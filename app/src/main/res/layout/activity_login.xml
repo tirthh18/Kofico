@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".activity.login">
+
 
     <ImageView
         android:id="@+id/top_drawer"
@@ -25,7 +29,6 @@
         android:text="Sign In"
         android:textColor="@color/black"
         android:textSize="35dp" />
-
     <LinearLayout
         android:id="@+id/kotak"
         android:layout_width="match_parent"
@@ -36,26 +39,27 @@
 
 
         <EditText
-            android:id="@+id/login_email"
+            android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/userphoto"
             android:drawablePadding="15dp"
             android:ems="10"
             android:fontFamily="@font/nmedium"
-            android:hint="  email@gmail.com"
+            android:hint="username"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/key"
             android:drawablePadding="15dp"
             android:ems="10"
             android:fontFamily="@font/nmedium"
-            android:hint="  Password"
+            android:hint="Password"
             android:inputType="textPassword" />
     </LinearLayout>
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login_button_login"
         android:layout_width="match_parent"
@@ -68,19 +72,6 @@
         android:text="LOGIN"
         android:textColor="#F8F6F6"
         android:textSize="16dp" />
-
-<!--    <TextView-->
-<!--        android:id="@+id/login_forgot_password"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/login_button_login"-->
-<!--        android:layout_marginHorizontal="30dp"-->
-<!--        android:layout_marginVertical="10dp"-->
-<!--        android:fontFamily="@font/nmedium"-->
-<!--        android:gravity="right"-->
-<!--        android:text=""-->
-<!--        android:textColor="@color/copper" />-->
-
     <TextView
         android:id="@+id/login_button_register"
         android:layout_width="match_parent"

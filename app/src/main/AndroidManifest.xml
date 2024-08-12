@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Kofico"
         tools:targetApi="31">
         <activity
+            android:name=".account"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.fragment_home"
+            android:exported="false" />
+        <activity
+            android:name=".activity.navigation"
+            android:exported="false" />
+        <activity
             android:name=".activity.login"
             android:exported="false" />
         <activity

@@ -45,7 +45,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_star_24" />
+                android:src="@drawable/rating" />
 
             <TextView
                 android:id="@+id/all_rating"

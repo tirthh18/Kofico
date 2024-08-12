@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Kofico" >
         <activity
+            android:name="com.example.kofico.account"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kofico.fragment.fragment_home"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kofico.activity.navigation"
+            android:exported="false" />
+        <activity
             android:name="com.example.kofico.activity.login"
             android:exported="false" />
         <activity
