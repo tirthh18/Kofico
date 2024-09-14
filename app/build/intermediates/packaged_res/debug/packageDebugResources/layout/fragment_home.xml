@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FBFBFB"
+    tools:context=".fragment.home">
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="-30dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/roundstylebig"
+            android:backgroundTint="@color/colorprimary" />
+
+        <TextView
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_with_radiusnew"
+            android:elevation="5dp"
+            android:fontFamily="@font/nmedium"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="Coffee shop near me"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nbold"
+            android:text="Our product"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_below="@id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_all_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" />
+
+    </ScrollView>
+    </RelativeLayout>

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.kofico.R;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.example.kofico.adapters.adapter_dbhendler;
+import com.example.kofico.adapters.adapter_dbhelper;
 
 public class register extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class register extends AppCompatActivity {
             EditText regEmail=findViewById(R.id.register_email);
             EditText regPassword=findViewById(R.id.register_password);
             Button signup=findViewById(R.id.register_button_register);
-            adapter_dbhendler DB=new adapter_dbhendler(this);
+            adapter_dbhelper DB=new adapter_dbhelper(this);
 
             signup.setOnClickListener(new View.OnClickListener() {
                 @Override

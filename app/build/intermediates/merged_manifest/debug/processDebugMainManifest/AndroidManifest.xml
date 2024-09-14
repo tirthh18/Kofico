@@ -28,19 +28,19 @@
         android:testOnly="true"
         android:theme="@style/Theme.Kofico" >
         <activity
-            android:name="com.example.kofico.account"
+            android:name="com.example.kofico.activity.profile.sequrity"
             android:exported="false" />
         <activity
-            android:name="com.example.kofico.fragment.fragment_home"
+            android:name="com.example.kofico.activity.profile.help"
             android:exported="false" />
         <activity
-            android:name="com.example.kofico.activity.navigation"
+            android:name="com.example.kofico.activity.MainActivity"
             android:exported="false" />
         <activity
             android:name="com.example.kofico.activity.login"
             android:exported="false" />
         <activity
-            android:name="com.example.kofico.activity.homepage"
+            android:name="com.example.kofico.fragment.homepage"
             android:exported="false" />
         <activity
             android:name="com.example.kofico.activity.register"

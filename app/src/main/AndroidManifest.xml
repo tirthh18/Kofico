@@ -13,19 +13,19 @@
         android:theme="@style/Theme.Kofico"
         tools:targetApi="31">
         <activity
-            android:name=".account"
+            android:name=".activity.profile.sequrity"
             android:exported="false" />
         <activity
-            android:name=".fragment.fragment_home"
+            android:name=".activity.profile.help"
             android:exported="false" />
         <activity
-            android:name=".activity.navigation"
+            android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
             android:name=".activity.login"
             android:exported="false" />
         <activity
-            android:name=".activity.homepage"
+            android:name=".fragment.homepage"
             android:exported="false" />
         <activity
             android:name=".activity.register"

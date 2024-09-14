@@ -295,6 +295,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -1045,6 +1049,18 @@ attr region_widthMoreThan
 attr removeEmbeddedFabElevation
 attr reverseLayout
 attr rippleColor
+attr riv_border_color
+attr riv_border_width
+attr riv_corner_radius
+attr riv_corner_radius_bottom_left
+attr riv_corner_radius_bottom_right
+attr riv_corner_radius_top_left
+attr riv_corner_radius_top_right
+attr riv_mutate_background
+attr riv_oval
+attr riv_tile_mode
+attr riv_tile_mode_x
+attr riv_tile_mode_y
 attr rotationCenterId
 attr round
 attr roundPercent
@@ -3043,6 +3059,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow_back
+drawable arrow_forward
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg
@@ -3061,6 +3079,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gosend
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3087,6 +3106,7 @@ drawable ic_search_black_24
 drawable indeterminate_static
 drawable key
 drawable logo
+drawable logout
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3159,9 +3179,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable questionmark
 drawable rating
 drawable roundstyle
+drawable roundstyle30dp
 drawable roundstylebig
+drawable security
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3173,6 +3196,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id Hade
 id META
 id NO_DEBUG
 id SHIFT
@@ -3239,14 +3263,11 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_to_cart
 id alertTitle
 id aligned
 id all
 id allStates
-id all_image
-id all_judul
-id all_price
-id all_rating
 id always
 id animateToEnd
 id animateToStart
@@ -3261,6 +3282,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3278,6 +3300,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cartfragment
 id center
 id centerCrop
 id centerInside
@@ -3288,8 +3311,11 @@ id chain2
 id chains
 id checkbox
 id checked
+id checkout_back_button
+id checkout_buat_pesanan
 id chronometer
 id circle_center
+id clamp
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3312,10 +3338,12 @@ id currentState
 id custom
 id customPanel
 id cut
+id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
+id decrease_button
 id default_activity_button
 id deltaRelative
 id dependency_ordering
@@ -3324,6 +3352,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detail
 id dialog_button
 id dimensions
 id direct
@@ -3376,10 +3405,15 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frame_layout
 id frost
 id fullscreen_header
+id garis_atas
+id garis_pesanan
+id garis_tengah
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3388,11 +3422,14 @@ id grouping
 id groups
 id hardware
 id header_title
+id heading
+id helm
+id help
 id hide_ime_id
 id hideable
 id home
 id homeAsUp
-id homeFragment
+id homefragment
 id honorRequest
 id horizontal_only
 id icon
@@ -3404,18 +3441,23 @@ id ignoreRequest
 id image
 id immediateStop
 id included
+id increase_button
 id indeterminate
 id info
 id invisible
 id inward
 id italic
+id item_no
 id item_touch_helper_previous_elevation
 id iv
 id iv_amogus
 id jumpToEnd
 id jumpToStart
-id keranjangFragment
+id keranjang_checkout
+id keranjang_subtotal
 id kotak
+id kotak_alamat
+id kotak_send
 id labeled
 id layout
 id left
@@ -3430,10 +3472,11 @@ id login_button_login
 id login_button_register
 id login_password
 id login_username
+id logout
 id lottie_layer_name
+id ly1
 id m3_side_sheet
 id main
-id mainlayout
 id marquee
 id masked
 id match_constraint
@@ -3462,6 +3505,7 @@ id matrix
 id message
 id middle
 id mini
+id mirror
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3493,6 +3537,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3513,6 +3558,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view
 id open_search_view_background
@@ -3528,6 +3575,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id orderfragment
 id outline
 id outward
 id overshoot
@@ -3542,12 +3590,14 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id pesananFragment
 id pin
 id position
 id postLayout
 id pressed
-id profileFragment
+id price
+id profile_email
+id profile_name
+id profilefragment
 id progress_circular
 id progress_horizontal
 id radio
@@ -3562,6 +3612,7 @@ id register_password
 id register_sub_title
 id register_title
 id register_username
+id repeat
 id report_drawn
 id restart
 id reverse
@@ -3573,6 +3624,8 @@ id right_side
 id rounded
 id row_index_key
 id rv_all_item
+id rv_carts
+id rv_judul
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3594,6 +3647,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id security
 id select_dialog_listview
 id selected
 id selection_type
@@ -3658,6 +3712,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3687,7 +3742,13 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv
+id tv_BalaiKopi
+id tv_alamat
 id tv_count
+id tv_keranjang
+id tv_ongkos_kirim
+id tv_subtotal
 id unchecked
 id uniform
 id unlabeled
@@ -3827,10 +3888,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_account
-layout activity_homepage
+layout activity_help
 layout activity_login
+layout activity_main
 layout activity_register
+layout activity_sequrity
 layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3848,7 +3910,12 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout holder_item
+layout fragment_cart
+layout fragment_checkout
+layout fragment_home
+layout fragment_profile
+layout holder_cart_item
+layout holder_home_item
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3915,6 +3982,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_navbar
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap illustration_top_drawer_login
 mipmap kopi1
@@ -3970,14 +4038,25 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string define_roundedimageview
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string library_roundedimageview_author
+string library_roundedimageview_authorWebsite
+string library_roundedimageview_isOpenSource
+string library_roundedimageview_libraryDescription
+string library_roundedimageview_libraryName
+string library_roundedimageview_libraryVersion
+string library_roundedimageview_libraryWebsite
+string library_roundedimageview_licenseId
+string library_roundedimageview_repositoryLink
 string login_no_account
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -5254,6 +5333,7 @@ styleable CellImageView meow_imageview_actionBackgroundAlpha meow_imageview_chan
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
@@ -5343,6 +5423,7 @@ styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RoundedImageView android_scaleType riv_border_color riv_border_width riv_corner_radius riv_corner_radius_bottom_left riv_corner_radius_bottom_right riv_corner_radius_top_left riv_corner_radius_top_right riv_mutate_background riv_oval riv_tile_mode riv_tile_mode_x riv_tile_mode_y
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchBar android_textAppearance android_text android_hint backgroundTint defaultMarginsEnabled defaultScrollFlagsEnabled elevation forceDefaultNavigationOnClickListener hideNavigationIcon navigationIconTint strokeColor strokeWidth tintNavigationIcon

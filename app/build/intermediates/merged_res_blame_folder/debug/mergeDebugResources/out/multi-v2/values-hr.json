@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kofico.app-mergeDebugResources-31:/values-hr/values-hr.xml",
+            "outputFile": "com.example.kofico.app-mergeDebugResources-36:/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/Users/tirth/.gradle/caches/transforms-4/e3afcb6995278099648a387b88517c1a/transformed/core-1.13.0/res/values-hr/values-hr.xml",

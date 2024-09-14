@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".fragment.makeorder">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/checkout_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-8dp"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/arrow_back" />
+
+    <View
+        android:id="@+id/kotak_send"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/checkout_back_button"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white" />
+
+    <ImageView
+        android:id="@+id/helm"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/checkout_back_button"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/bg_send"
+        android:scaleType="center"
+        android:src="@drawable/gosend" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkout_back_button"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/helm"
+        android:fontFamily="@font/nbold"
+        android:text="Deliver"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/garis_atas"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/kotak_send"
+        android:layout_marginTop="20dp"
+        android:background="@color/underline" />
+
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis_atas"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:fontFamily="@font/nbold"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/kotak_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_below="@id/tv_alamat"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alamat"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nbold"
+            android:text="Raju Bhaiya"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:fontFamily="@font/nmedium"
+            android:text="1234567890"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nmedium"
+            android:lines="2"
+            android:text="12- Raj bhavan near matavadi"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/garis_tengah"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/kotak_alamat"
+        android:layout_marginTop="20dp"
+        android:background="@color/underline" />
+
+    <TextView
+        android:id="@+id/tv_BalaiKopi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis_tengah"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:fontFamily="@font/nbold"
+        android:text="Coffee Hall"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_BalaiKopi"
+        android:layout_marginHorizontal="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/garis_pesanan"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nbold"
+        android:text="Subtotal"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/keranjang_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/garis_pesanan"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nmedium"
+        android:gravity="right"
+        android:text="Rp 0"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <View
+        android:id="@+id/garis_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/checkout_buat_pesanan"
+        android:layout_marginBottom="8dp"
+        android:background="@color/underline" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkout_buat_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg"
+        android:backgroundTint="@color/colorprimary"
+        android:fontFamily="@font/nbold"
+        android:text="Make an Order"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>

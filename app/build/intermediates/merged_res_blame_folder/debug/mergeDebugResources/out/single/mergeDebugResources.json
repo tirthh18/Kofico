@@ -1,178 +1,242 @@
 [
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_splash.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_splash.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_button_with_radiusnew.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/button_with_radiusnew.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_key.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/key.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.kofico.app-debug-33:/layout_activity_homepage.xml.flat",
-        "source": "com.example.kofico.app-main-35:/layout/activity_homepage.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_activity_help.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_help.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/raw_splashhh.json.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/raw/splashhh.json"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_fragment_profile.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_profile.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_questionmark.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/questionmark.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/font_nmedium.ttf.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/font/nmedium.ttf"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_logout.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/logout.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/menu_bottom_navbar.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/menu/bottom_navbar.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_activity_login.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/menu_bottom_navbar.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/menu/bottom_navbar.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_userphoto.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/userphoto.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_logo.png.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/logo.png"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_button_with_radiusnew.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/button_with_radiusnew.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_activity_main.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_bg.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/bg.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_account.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_account.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_roundstylebig.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/roundstylebig.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_fragment_home.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_fragment_home.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_ic_cart.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/ic_cart.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_ic_cart.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/ic_cart.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-hdpi_kopi1.png.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-hdpi/kopi1.png"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_arrow_back.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/arrow_back.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_ic_order.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/ic_order.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_homepage.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_homepage.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_fragment_checkout.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_checkout.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_navigation.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_navigation.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.kofico.app-debug-33:/layout_activity_account.xml.flat",
-        "source": "com.example.kofico.app-main-35:/layout/activity_account.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/font_nmedium.ttf.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/font/nmedium.ttf"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_login.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_login.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_activity_sequrity.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_sequrity.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/font_nbold.ttf.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/font/nbold.ttf"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/raw_splashhh.json.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/raw/splashhh.json"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_fragment_home.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_home.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_rating.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/rating.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_holder_cart_item.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/holder_cart_item.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_activity_register.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/activity_register.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_roundstyle.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/roundstyle.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_roundstylebig.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/roundstylebig.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_gosend.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/gosend.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-hdpi_illustration_top_drawer_login.png.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-hdpi/illustration_top_drawer_login.png"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_holder_item.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/holder_item.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_activity_splash.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_splash.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/font_nbold.ttf.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/font/nbold.ttf"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_roundstyle.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/roundstyle.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-hdpi_kopi1.png.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-hdpi/kopi1.png"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/xml_backup_rules.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/xml/backup_rules.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_roundstyle30dp.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/roundstyle30dp.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_ic_home.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/ic_home.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/xml/data_extraction_rules.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_rating.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/rating.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/layout_holder_item.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/layout/holder_item.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_bottom_nav_colors.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/bottom_nav_colors.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_bottom_nav_colors.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/bottom_nav_colors.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/drawable_logo.png.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/drawable/logo.png"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-hdpi_illustration_top_drawer_login.png.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-hdpi/illustration_top_drawer_login.png"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_ic_order.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/ic_order.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_fragment_cart.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_cart.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.kofico.app-debug-38:/layout_holder_cart_item.xml.flat",
+        "source": "com.example.kofico.app-main-40:/layout/holder_cart_item.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_userphoto.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/userphoto.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_arrow_forward.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/arrow_forward.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_holder_home_item.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/holder_home_item.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_key.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/key.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/xml_backup_rules.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_security.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/security.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_activity_register.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_bg.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/bg.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_ic_home.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-mdpi/ic_launcher.webp"
     }
 ]
