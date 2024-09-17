@@ -7,7 +7,7 @@
     tools:context=".activity.profile.help">
 
     <LinearLayout
-        android:id="@+id/Hade"
+        android:id="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#5A3F12"
@@ -25,7 +25,7 @@
             app:tint="@color/white" />
 
         <TextView
-            android:id="@+id/tv"
+            android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -37,7 +37,7 @@
             android:textSize="18dp" />
     </LinearLayout>
     <ScrollView
-        android:layout_below="@+id/Hade"
+        android:layout_below="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -47,7 +47,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Help Topics -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

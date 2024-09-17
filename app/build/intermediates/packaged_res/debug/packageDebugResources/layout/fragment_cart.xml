@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:background="#FBFBFB"
     tools:context=".fragment.cart">
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:id="@+id/tv_keranjang"
+        android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
@@ -21,28 +21,17 @@
         android:id="@+id/rv_carts"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/tv_ongkos_kirim"
-        android:layout_below="@id/tv_keranjang"
+        android:layout_above="@+id/tv_subtotal"
+        android:layout_below="@id/tv_title"
         android:layout_marginBottom="5dp" />
 
-    <TextView
-        android:id="@+id/tv_ongkos_kirim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/tv_subtotal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="5dp"
-        android:fontFamily="@font/nmedium"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18sp" />
 
 
     <TextView
         android:id="@+id/tv_subtotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/keranjang_checkout"
+        android:layout_above="@id/checkout"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nbold"
@@ -51,10 +40,10 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/keranjang_subtotal"
+        android:id="@+id/tv_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/keranjang_checkout"
+        android:layout_above="@id/checkout"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nmedium"
@@ -63,8 +52,8 @@
         android:textColor="@color/black"
         android:textSize="18sp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/keranjang_checkout"
+    <Button
+        android:id="@+id/checkout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

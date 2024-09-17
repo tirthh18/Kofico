@@ -21,16 +21,16 @@ public final class ActivitySequrityBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final LinearLayout Hade;
-
-  @NonNull
   public final ImageView back;
 
-  private ActivitySequrityBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout Hade,
-      @NonNull ImageView back) {
+  @NonNull
+  public final LinearLayout head;
+
+  private ActivitySequrityBinding(@NonNull RelativeLayout rootView, @NonNull ImageView back,
+      @NonNull LinearLayout head) {
     this.rootView = rootView;
-    this.Hade = Hade;
     this.back = back;
+    this.head = head;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class ActivitySequrityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Hade;
-      LinearLayout Hade = ViewBindings.findChildViewById(rootView, id);
-      if (Hade == null) {
-        break missingId;
-      }
-
       id = R.id.back;
       ImageView back = ViewBindings.findChildViewById(rootView, id);
       if (back == null) {
         break missingId;
       }
 
-      return new ActivitySequrityBinding((RelativeLayout) rootView, Hade, back);
+      id = R.id.head;
+      LinearLayout head = ViewBindings.findChildViewById(rootView, id);
+      if (head == null) {
+        break missingId;
+      }
+
+      return new ActivitySequrityBinding((RelativeLayout) rootView, back, head);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

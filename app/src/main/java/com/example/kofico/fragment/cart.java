@@ -36,7 +36,7 @@ public class cart extends Fragment {
         recyclerView = view.findViewById(R.id.rv_carts);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        subtotalTextView = view.findViewById(R.id.keranjang_subtotal);
+        subtotalTextView = view.findViewById(R.id.tv_subtotal);
 
         cartViewModel = new ViewModelProvider(requireActivity()).get(cartviewmodel.class);
 

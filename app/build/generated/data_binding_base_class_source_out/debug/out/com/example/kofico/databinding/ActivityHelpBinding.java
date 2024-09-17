@@ -22,20 +22,20 @@ public final class ActivityHelpBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final LinearLayout Hade;
-
-  @NonNull
   public final ImageView back;
 
   @NonNull
-  public final TextView tv;
+  public final LinearLayout head;
 
-  private ActivityHelpBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout Hade,
-      @NonNull ImageView back, @NonNull TextView tv) {
+  @NonNull
+  public final TextView tvTitle;
+
+  private ActivityHelpBinding(@NonNull RelativeLayout rootView, @NonNull ImageView back,
+      @NonNull LinearLayout head, @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.Hade = Hade;
     this.back = back;
-    this.tv = tv;
+    this.head = head;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -65,25 +65,25 @@ public final class ActivityHelpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Hade;
-      LinearLayout Hade = ViewBindings.findChildViewById(rootView, id);
-      if (Hade == null) {
-        break missingId;
-      }
-
       id = R.id.back;
       ImageView back = ViewBindings.findChildViewById(rootView, id);
       if (back == null) {
         break missingId;
       }
 
-      id = R.id.tv;
-      TextView tv = ViewBindings.findChildViewById(rootView, id);
-      if (tv == null) {
+      id = R.id.head;
+      LinearLayout head = ViewBindings.findChildViewById(rootView, id);
+      if (head == null) {
         break missingId;
       }
 
-      return new ActivityHelpBinding((RelativeLayout) rootView, Hade, back, tv);
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityHelpBinding((RelativeLayout) rootView, back, head, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -5,34 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FBFBFB"
-    tools:context=".fragment.makeorder">
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/checkout_back_button"
+    tools:context=".fragment.checkout">
+    <LinearLayout
+        android:id="@+id/head"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="-8dp"
-        android:background="@color/white"
-        app:navigationIcon="@drawable/arrow_back" />
+        android:layout_height="55dp"
+        android:background="#5A3F12"
+        android:orientation="horizontal">
 
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:scaleX="-1"
+            android:src="@drawable/arrow_forward"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nmedium"
+            android:text="Checkout "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
     <View
-        android:id="@+id/kotak_send"
+        android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_below="@id/checkout_back_button"
+        android:layout_below="@id/head"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white" />
 
     <ImageView
-        android:id="@+id/helm"
+        android:id="@+id/heading_photo"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_below="@id/checkout_back_button"
+        android:layout_below="@id/head"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/bg_send"
         android:scaleType="center"
@@ -41,9 +59,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkout_back_button"
-        android:layout_marginTop="32dp"
-        android:layout_toRightOf="@+id/helm"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/heading_photo"
         android:fontFamily="@font/nbold"
         android:text="Deliver"
         android:textColor="@color/black"
@@ -51,18 +69,18 @@
         android:textStyle="bold" />
 
     <View
-        android:id="@+id/garis_atas"
+        android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/kotak_send"
+        android:layout_below="@+id/heading"
         android:layout_marginTop="20dp"
         android:background="@color/underline" />
 
     <TextView
-        android:id="@+id/tv_alamat"
+        android:id="@+id/addres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/garis_atas"
+        android:layout_below="@+id/line"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="5dp"
         android:fontFamily="@font/nbold"
@@ -73,10 +91,10 @@
 
 
     <View
-        android:id="@+id/kotak_alamat"
+        android:id="@+id/addres_detail"
         android:layout_width="match_parent"
         android:layout_height="98dp"
-        android:layout_below="@id/tv_alamat"
+        android:layout_below="@id/addres"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white" />
@@ -85,7 +103,7 @@
         android:id="@+id/ly1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_alamat"
+        android:layout_below="@+id/addres"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="5dp"
         android:orientation="vertical">
@@ -94,7 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nbold"
-            android:text="Raju Bhaiya"
+            android:text="Tirth "
             android:textColor="@color/black" />
 
         <TextView
@@ -110,24 +128,24 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/nmedium"
             android:lines="2"
-            android:text="12- Raj bhavan near matavadi"
+            android:text="A-2, maruti nandan bunglows, nadiad"
             android:textColor="@color/black" />
 
     </LinearLayout>
 
     <View
-        android:id="@+id/garis_tengah"
+        android:id="@+id/line2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/kotak_alamat"
+        android:layout_below="@+id/addres_detail"
         android:layout_marginTop="20dp"
         android:background="@color/underline" />
 
     <TextView
-        android:id="@+id/tv_BalaiKopi"
+        android:id="@+id/shop_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/garis_tengah"
+        android:layout_below="@+id/line2"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="5dp"
         android:fontFamily="@font/nbold"
@@ -136,19 +154,19 @@
         android:textSize="20dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_judul"
+        android:id="@+id/recyler_view"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_below="@+id/tv_BalaiKopi"
+        android:layout_below="@+id/shop_name"
         android:layout_marginHorizontal="20dp" />
 
 
 
     <TextView
-        android:id="@+id/tv_subtotal"
+        android:id="@+id/subtotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/garis_pesanan"
+        android:layout_above="@id/line3"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nbold"
@@ -157,10 +175,10 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/keranjang_subtotal"
+        android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/garis_pesanan"
+        android:layout_above="@id/line3"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nmedium"
@@ -171,15 +189,15 @@
 
 
     <View
-        android:id="@+id/garis_pesanan"
+        android:id="@+id/line3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_above="@+id/checkout_buat_pesanan"
+        android:layout_above="@+id/make_order"
         android:layout_marginBottom="8dp"
         android:background="@color/underline" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/checkout_buat_pesanan"
+        android:id="@+id/make_order"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

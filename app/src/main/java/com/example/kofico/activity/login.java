@@ -29,9 +29,9 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
-        register = findViewById(R.id.login_button_register);
-        username = findViewById(R.id.login_username);
-        password = findViewById(R.id.login_password);
+        register = findViewById(R.id.tv_login_button_register);
+        username = findViewById(R.id.et_login_username);
+        password = findViewById(R.id.et_login_password);
         login_btn = findViewById(R.id.login_button_login);
         pref = getSharedPreferences("user_details",MODE_PRIVATE);
         intent = new Intent(login.this, MainActivity.class);

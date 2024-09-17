@@ -4,6 +4,7 @@ package com.example.kofico.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -11,7 +12,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.kofico.R;
@@ -24,42 +24,42 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final LinearLayout kotak;
+  public final LinearLayout detail;
 
   @NonNull
-  public final AppCompatButton loginButtonLogin;
+  public final EditText etLoginPassword;
 
   @NonNull
-  public final TextView loginButtonRegister;
+  public final EditText etLoginUsername;
 
   @NonNull
-  public final EditText loginPassword;
+  public final ImageView ivImage;
 
   @NonNull
-  public final EditText loginUsername;
+  public final Button loginButtonLogin;
 
   @NonNull
   public final RelativeLayout main;
 
   @NonNull
-  public final TextView signIn;
+  public final TextView tvLoginButtonRegister;
 
   @NonNull
-  public final ImageView topDrawer;
+  public final TextView tvSignIn;
 
-  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout kotak,
-      @NonNull AppCompatButton loginButtonLogin, @NonNull TextView loginButtonRegister,
-      @NonNull EditText loginPassword, @NonNull EditText loginUsername,
-      @NonNull RelativeLayout main, @NonNull TextView signIn, @NonNull ImageView topDrawer) {
+  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout detail,
+      @NonNull EditText etLoginPassword, @NonNull EditText etLoginUsername,
+      @NonNull ImageView ivImage, @NonNull Button loginButtonLogin, @NonNull RelativeLayout main,
+      @NonNull TextView tvLoginButtonRegister, @NonNull TextView tvSignIn) {
     this.rootView = rootView;
-    this.kotak = kotak;
+    this.detail = detail;
+    this.etLoginPassword = etLoginPassword;
+    this.etLoginUsername = etLoginUsername;
+    this.ivImage = ivImage;
     this.loginButtonLogin = loginButtonLogin;
-    this.loginButtonRegister = loginButtonRegister;
-    this.loginPassword = loginPassword;
-    this.loginUsername = loginUsername;
     this.main = main;
-    this.signIn = signIn;
-    this.topDrawer = topDrawer;
+    this.tvLoginButtonRegister = tvLoginButtonRegister;
+    this.tvSignIn = tvSignIn;
   }
 
   @Override
@@ -89,52 +89,52 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.kotak;
-      LinearLayout kotak = ViewBindings.findChildViewById(rootView, id);
-      if (kotak == null) {
+      id = R.id.detail;
+      LinearLayout detail = ViewBindings.findChildViewById(rootView, id);
+      if (detail == null) {
+        break missingId;
+      }
+
+      id = R.id.et_login_password;
+      EditText etLoginPassword = ViewBindings.findChildViewById(rootView, id);
+      if (etLoginPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.et_login_username;
+      EditText etLoginUsername = ViewBindings.findChildViewById(rootView, id);
+      if (etLoginUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.iv_image;
+      ImageView ivImage = ViewBindings.findChildViewById(rootView, id);
+      if (ivImage == null) {
         break missingId;
       }
 
       id = R.id.login_button_login;
-      AppCompatButton loginButtonLogin = ViewBindings.findChildViewById(rootView, id);
+      Button loginButtonLogin = ViewBindings.findChildViewById(rootView, id);
       if (loginButtonLogin == null) {
-        break missingId;
-      }
-
-      id = R.id.login_button_register;
-      TextView loginButtonRegister = ViewBindings.findChildViewById(rootView, id);
-      if (loginButtonRegister == null) {
-        break missingId;
-      }
-
-      id = R.id.login_password;
-      EditText loginPassword = ViewBindings.findChildViewById(rootView, id);
-      if (loginPassword == null) {
-        break missingId;
-      }
-
-      id = R.id.login_username;
-      EditText loginUsername = ViewBindings.findChildViewById(rootView, id);
-      if (loginUsername == null) {
         break missingId;
       }
 
       RelativeLayout main = (RelativeLayout) rootView;
 
-      id = R.id.sign_in;
-      TextView signIn = ViewBindings.findChildViewById(rootView, id);
-      if (signIn == null) {
+      id = R.id.tv_login_button_register;
+      TextView tvLoginButtonRegister = ViewBindings.findChildViewById(rootView, id);
+      if (tvLoginButtonRegister == null) {
         break missingId;
       }
 
-      id = R.id.top_drawer;
-      ImageView topDrawer = ViewBindings.findChildViewById(rootView, id);
-      if (topDrawer == null) {
+      id = R.id.tv_sign_in;
+      TextView tvSignIn = ViewBindings.findChildViewById(rootView, id);
+      if (tvSignIn == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((RelativeLayout) rootView, kotak, loginButtonLogin,
-          loginButtonRegister, loginPassword, loginUsername, main, signIn, topDrawer);
+      return new ActivityLoginBinding((RelativeLayout) rootView, detail, etLoginPassword,
+          etLoginUsername, ivImage, loginButtonLogin, main, tvLoginButtonRegister, tvSignIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

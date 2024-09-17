@@ -21,15 +21,15 @@ public final class ActivitySplashBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final TextView appName;
+  public final TextView appname;
 
   @NonNull
   public final ImageView ivAmogus;
 
-  private ActivitySplashBinding(@NonNull FrameLayout rootView, @NonNull TextView appName,
+  private ActivitySplashBinding(@NonNull FrameLayout rootView, @NonNull TextView appname,
       @NonNull ImageView ivAmogus) {
     this.rootView = rootView;
-    this.appName = appName;
+    this.appname = appname;
     this.ivAmogus = ivAmogus;
   }
 
@@ -60,9 +60,9 @@ public final class ActivitySplashBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.appName;
-      TextView appName = ViewBindings.findChildViewById(rootView, id);
-      if (appName == null) {
+      id = R.id.appname;
+      TextView appname = ViewBindings.findChildViewById(rootView, id);
+      if (appname == null) {
         break missingId;
       }
 
@@ -72,7 +72,7 @@ public final class ActivitySplashBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySplashBinding((FrameLayout) rootView, appName, ivAmogus);
+      return new ActivitySplashBinding((FrameLayout) rootView, appname, ivAmogus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -9,20 +8,21 @@
 
 
     <ImageView
-        android:id="@+id/top_drawer"
+        android:id="@+id/iv_image"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
         android:src="@mipmap/illustration_top_drawer_login" />
 
     <TextView
-        android:id="@+id/sign_in"
+        android:id="@+id/tv_sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/top_drawer"
+        android:layout_below="@id/iv_image"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="30dp"
         android:fontFamily="@font/nbold"
@@ -30,16 +30,16 @@
         android:textColor="@color/black"
         android:textSize="35dp" />
     <LinearLayout
-        android:id="@+id/kotak"
+        android:id="@+id/detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sign_in"
+        android:layout_below="@id/tv_sign_in"
         android:layout_marginHorizontal="30dp"
         android:orientation="vertical">
 
 
         <EditText
-            android:id="@+id/login_username"
+            android:id="@+id/et_login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/userphoto"
@@ -50,7 +50,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/login_password"
+            android:id="@+id/et_login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/key"
@@ -60,20 +60,20 @@
             android:hint="Password"
             android:inputType="textPassword" />
     </LinearLayout>
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/login_button_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/kotak"
+        android:layout_below="@id/detail"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/bg"
         android:fontFamily="@font/nmedium"
         android:text="LOGIN"
         android:textColor="#F8F6F6"
         android:textSize="16dp" />
     <TextView
-        android:id="@+id/login_button_register"
+        android:id="@+id/tv_login_button_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

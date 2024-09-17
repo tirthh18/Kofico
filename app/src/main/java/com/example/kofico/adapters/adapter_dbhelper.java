@@ -1,6 +1,5 @@
 package com.example.kofico.adapters;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -58,10 +57,7 @@ public class adapter_dbhelper extends SQLiteOpenHelper {
         Cursor cur = mydb.rawQuery("SELECT * FROM USER WHERE username=?", new String[]{uname});
 
         if (cur != null && cur.moveToFirst()) {
-//            for (String columnName : cur.getColumnNames()) {
-//                int columnIndex = cur.getColumnIndex(columnName);
-//                Log.d("Database", "Column: " + columnName + " Index: " + columnIndex);
-//            }
+
             int usernameIndex = cur.getColumnIndex("username");
             int nameIndex = cur.getColumnIndex("name");
             int passwordIndex = cur.getColumnIndex("password");

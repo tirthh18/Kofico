@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.kofico.R;
-import com.google.android.material.appbar.MaterialToolbar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,68 +24,72 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final MaterialToolbar checkoutBackButton;
+  public final TextView addres;
 
   @NonNull
-  public final AppCompatButton checkoutBuatPesanan;
+  public final View addresDetail;
 
   @NonNull
-  public final View garisAtas;
+  public final ImageView back;
 
   @NonNull
-  public final View garisPesanan;
+  public final LinearLayout head;
 
   @NonNull
-  public final View garisTengah;
+  public final View heading;
 
   @NonNull
-  public final ImageView helm;
+  public final ImageView headingPhoto;
 
   @NonNull
-  public final TextView keranjangSubtotal;
+  public final View line;
 
   @NonNull
-  public final View kotakAlamat;
+  public final View line2;
 
   @NonNull
-  public final View kotakSend;
+  public final View line3;
 
   @NonNull
   public final LinearLayout ly1;
 
   @NonNull
-  public final RecyclerView rvJudul;
+  public final AppCompatButton makeOrder;
 
   @NonNull
-  public final TextView tvAlamat;
+  public final TextView price;
 
   @NonNull
-  public final TextView tvBalaiKopi;
+  public final RecyclerView recylerView;
 
   @NonNull
-  public final TextView tvSubtotal;
+  public final TextView shopName;
 
-  private FragmentCheckoutBinding(@NonNull RelativeLayout rootView,
-      @NonNull MaterialToolbar checkoutBackButton, @NonNull AppCompatButton checkoutBuatPesanan,
-      @NonNull View garisAtas, @NonNull View garisPesanan, @NonNull View garisTengah,
-      @NonNull ImageView helm, @NonNull TextView keranjangSubtotal, @NonNull View kotakAlamat,
-      @NonNull View kotakSend, @NonNull LinearLayout ly1, @NonNull RecyclerView rvJudul,
-      @NonNull TextView tvAlamat, @NonNull TextView tvBalaiKopi, @NonNull TextView tvSubtotal) {
+  @NonNull
+  public final TextView subtotal;
+
+  private FragmentCheckoutBinding(@NonNull RelativeLayout rootView, @NonNull TextView addres,
+      @NonNull View addresDetail, @NonNull ImageView back, @NonNull LinearLayout head,
+      @NonNull View heading, @NonNull ImageView headingPhoto, @NonNull View line,
+      @NonNull View line2, @NonNull View line3, @NonNull LinearLayout ly1,
+      @NonNull AppCompatButton makeOrder, @NonNull TextView price,
+      @NonNull RecyclerView recylerView, @NonNull TextView shopName, @NonNull TextView subtotal) {
     this.rootView = rootView;
-    this.checkoutBackButton = checkoutBackButton;
-    this.checkoutBuatPesanan = checkoutBuatPesanan;
-    this.garisAtas = garisAtas;
-    this.garisPesanan = garisPesanan;
-    this.garisTengah = garisTengah;
-    this.helm = helm;
-    this.keranjangSubtotal = keranjangSubtotal;
-    this.kotakAlamat = kotakAlamat;
-    this.kotakSend = kotakSend;
+    this.addres = addres;
+    this.addresDetail = addresDetail;
+    this.back = back;
+    this.head = head;
+    this.heading = heading;
+    this.headingPhoto = headingPhoto;
+    this.line = line;
+    this.line2 = line2;
+    this.line3 = line3;
     this.ly1 = ly1;
-    this.rvJudul = rvJudul;
-    this.tvAlamat = tvAlamat;
-    this.tvBalaiKopi = tvBalaiKopi;
-    this.tvSubtotal = tvSubtotal;
+    this.makeOrder = makeOrder;
+    this.price = price;
+    this.recylerView = recylerView;
+    this.shopName = shopName;
+    this.subtotal = subtotal;
   }
 
   @Override
@@ -116,57 +119,57 @@ public final class FragmentCheckoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.checkout_back_button;
-      MaterialToolbar checkoutBackButton = ViewBindings.findChildViewById(rootView, id);
-      if (checkoutBackButton == null) {
+      id = R.id.addres;
+      TextView addres = ViewBindings.findChildViewById(rootView, id);
+      if (addres == null) {
         break missingId;
       }
 
-      id = R.id.checkout_buat_pesanan;
-      AppCompatButton checkoutBuatPesanan = ViewBindings.findChildViewById(rootView, id);
-      if (checkoutBuatPesanan == null) {
+      id = R.id.addres_detail;
+      View addresDetail = ViewBindings.findChildViewById(rootView, id);
+      if (addresDetail == null) {
         break missingId;
       }
 
-      id = R.id.garis_atas;
-      View garisAtas = ViewBindings.findChildViewById(rootView, id);
-      if (garisAtas == null) {
+      id = R.id.back;
+      ImageView back = ViewBindings.findChildViewById(rootView, id);
+      if (back == null) {
         break missingId;
       }
 
-      id = R.id.garis_pesanan;
-      View garisPesanan = ViewBindings.findChildViewById(rootView, id);
-      if (garisPesanan == null) {
+      id = R.id.head;
+      LinearLayout head = ViewBindings.findChildViewById(rootView, id);
+      if (head == null) {
         break missingId;
       }
 
-      id = R.id.garis_tengah;
-      View garisTengah = ViewBindings.findChildViewById(rootView, id);
-      if (garisTengah == null) {
+      id = R.id.heading;
+      View heading = ViewBindings.findChildViewById(rootView, id);
+      if (heading == null) {
         break missingId;
       }
 
-      id = R.id.helm;
-      ImageView helm = ViewBindings.findChildViewById(rootView, id);
-      if (helm == null) {
+      id = R.id.heading_photo;
+      ImageView headingPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (headingPhoto == null) {
         break missingId;
       }
 
-      id = R.id.keranjang_subtotal;
-      TextView keranjangSubtotal = ViewBindings.findChildViewById(rootView, id);
-      if (keranjangSubtotal == null) {
+      id = R.id.line;
+      View line = ViewBindings.findChildViewById(rootView, id);
+      if (line == null) {
         break missingId;
       }
 
-      id = R.id.kotak_alamat;
-      View kotakAlamat = ViewBindings.findChildViewById(rootView, id);
-      if (kotakAlamat == null) {
+      id = R.id.line2;
+      View line2 = ViewBindings.findChildViewById(rootView, id);
+      if (line2 == null) {
         break missingId;
       }
 
-      id = R.id.kotak_send;
-      View kotakSend = ViewBindings.findChildViewById(rootView, id);
-      if (kotakSend == null) {
+      id = R.id.line3;
+      View line3 = ViewBindings.findChildViewById(rootView, id);
+      if (line3 == null) {
         break missingId;
       }
 
@@ -176,33 +179,39 @@ public final class FragmentCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rv_judul;
-      RecyclerView rvJudul = ViewBindings.findChildViewById(rootView, id);
-      if (rvJudul == null) {
+      id = R.id.make_order;
+      AppCompatButton makeOrder = ViewBindings.findChildViewById(rootView, id);
+      if (makeOrder == null) {
         break missingId;
       }
 
-      id = R.id.tv_alamat;
-      TextView tvAlamat = ViewBindings.findChildViewById(rootView, id);
-      if (tvAlamat == null) {
+      id = R.id.price;
+      TextView price = ViewBindings.findChildViewById(rootView, id);
+      if (price == null) {
         break missingId;
       }
 
-      id = R.id.tv_BalaiKopi;
-      TextView tvBalaiKopi = ViewBindings.findChildViewById(rootView, id);
-      if (tvBalaiKopi == null) {
+      id = R.id.recyler_view;
+      RecyclerView recylerView = ViewBindings.findChildViewById(rootView, id);
+      if (recylerView == null) {
         break missingId;
       }
 
-      id = R.id.tv_subtotal;
-      TextView tvSubtotal = ViewBindings.findChildViewById(rootView, id);
-      if (tvSubtotal == null) {
+      id = R.id.shop_name;
+      TextView shopName = ViewBindings.findChildViewById(rootView, id);
+      if (shopName == null) {
         break missingId;
       }
 
-      return new FragmentCheckoutBinding((RelativeLayout) rootView, checkoutBackButton,
-          checkoutBuatPesanan, garisAtas, garisPesanan, garisTengah, helm, keranjangSubtotal,
-          kotakAlamat, kotakSend, ly1, rvJudul, tvAlamat, tvBalaiKopi, tvSubtotal);
+      id = R.id.subtotal;
+      TextView subtotal = ViewBindings.findChildViewById(rootView, id);
+      if (subtotal == null) {
+        break missingId;
+      }
+
+      return new FragmentCheckoutBinding((RelativeLayout) rootView, addres, addresDetail, back,
+          head, heading, headingPhoto, line, line2, line3, ly1, makeOrder, price, recylerView,
+          shopName, subtotal);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

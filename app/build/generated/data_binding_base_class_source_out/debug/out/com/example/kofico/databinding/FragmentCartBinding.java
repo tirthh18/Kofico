@@ -4,11 +4,11 @@ package com.example.kofico.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -22,34 +22,29 @@ public final class FragmentCartBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final AppCompatButton keranjangCheckout;
-
-  @NonNull
-  public final TextView keranjangSubtotal;
+  public final Button checkout;
 
   @NonNull
   public final RecyclerView rvCarts;
 
   @NonNull
-  public final TextView tvKeranjang;
-
-  @NonNull
-  public final TextView tvOngkosKirim;
+  public final TextView tvPrice;
 
   @NonNull
   public final TextView tvSubtotal;
 
-  private FragmentCartBinding(@NonNull RelativeLayout rootView,
-      @NonNull AppCompatButton keranjangCheckout, @NonNull TextView keranjangSubtotal,
-      @NonNull RecyclerView rvCarts, @NonNull TextView tvKeranjang, @NonNull TextView tvOngkosKirim,
-      @NonNull TextView tvSubtotal) {
+  @NonNull
+  public final TextView tvTitle;
+
+  private FragmentCartBinding(@NonNull RelativeLayout rootView, @NonNull Button checkout,
+      @NonNull RecyclerView rvCarts, @NonNull TextView tvPrice, @NonNull TextView tvSubtotal,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.keranjangCheckout = keranjangCheckout;
-    this.keranjangSubtotal = keranjangSubtotal;
+    this.checkout = checkout;
     this.rvCarts = rvCarts;
-    this.tvKeranjang = tvKeranjang;
-    this.tvOngkosKirim = tvOngkosKirim;
+    this.tvPrice = tvPrice;
     this.tvSubtotal = tvSubtotal;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -79,15 +74,9 @@ public final class FragmentCartBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.keranjang_checkout;
-      AppCompatButton keranjangCheckout = ViewBindings.findChildViewById(rootView, id);
-      if (keranjangCheckout == null) {
-        break missingId;
-      }
-
-      id = R.id.keranjang_subtotal;
-      TextView keranjangSubtotal = ViewBindings.findChildViewById(rootView, id);
-      if (keranjangSubtotal == null) {
+      id = R.id.checkout;
+      Button checkout = ViewBindings.findChildViewById(rootView, id);
+      if (checkout == null) {
         break missingId;
       }
 
@@ -97,15 +86,9 @@ public final class FragmentCartBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_keranjang;
-      TextView tvKeranjang = ViewBindings.findChildViewById(rootView, id);
-      if (tvKeranjang == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_ongkos_kirim;
-      TextView tvOngkosKirim = ViewBindings.findChildViewById(rootView, id);
-      if (tvOngkosKirim == null) {
+      id = R.id.tv_price;
+      TextView tvPrice = ViewBindings.findChildViewById(rootView, id);
+      if (tvPrice == null) {
         break missingId;
       }
 
@@ -115,8 +98,14 @@ public final class FragmentCartBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCartBinding((RelativeLayout) rootView, keranjangCheckout,
-          keranjangSubtotal, rvCarts, tvKeranjang, tvOngkosKirim, tvSubtotal);
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new FragmentCartBinding((RelativeLayout) rootView, checkout, rvCarts, tvPrice,
+          tvSubtotal, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

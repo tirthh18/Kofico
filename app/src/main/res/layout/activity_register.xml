@@ -32,7 +32,7 @@
         android:textColor="#634C4C"/>
 
     <ScrollView
-        android:id="@+id/idScroll"
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -40,7 +40,6 @@
         android:layout_below="@id/register_sub_title">
 
         <LinearLayout
-            android:id="@+id/register_linear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -93,11 +92,11 @@
 
     </ScrollView>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/register_button_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idScroll"
+        android:layout_below="@id/scrollview"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/bg"

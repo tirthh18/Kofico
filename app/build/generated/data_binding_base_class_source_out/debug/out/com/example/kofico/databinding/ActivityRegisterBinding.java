@@ -4,14 +4,13 @@ package com.example.kofico.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.kofico.R;
@@ -24,19 +23,13 @@ public final class ActivityRegisterBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ScrollView idScroll;
-
-  @NonNull
-  public final AppCompatButton registerButtonRegister;
+  public final Button registerButtonRegister;
 
   @NonNull
   public final EditText registerEmail;
 
   @NonNull
   public final EditText registerFullName;
-
-  @NonNull
-  public final LinearLayout registerLinear1;
 
   @NonNull
   public final EditText registerPassword;
@@ -50,21 +43,23 @@ public final class ActivityRegisterBinding implements ViewBinding {
   @NonNull
   public final EditText registerUsername;
 
-  private ActivityRegisterBinding(@NonNull RelativeLayout rootView, @NonNull ScrollView idScroll,
-      @NonNull AppCompatButton registerButtonRegister, @NonNull EditText registerEmail,
-      @NonNull EditText registerFullName, @NonNull LinearLayout registerLinear1,
-      @NonNull EditText registerPassword, @NonNull TextView registerSubTitle,
-      @NonNull TextView registerTitle, @NonNull EditText registerUsername) {
+  @NonNull
+  public final ScrollView scrollview;
+
+  private ActivityRegisterBinding(@NonNull RelativeLayout rootView,
+      @NonNull Button registerButtonRegister, @NonNull EditText registerEmail,
+      @NonNull EditText registerFullName, @NonNull EditText registerPassword,
+      @NonNull TextView registerSubTitle, @NonNull TextView registerTitle,
+      @NonNull EditText registerUsername, @NonNull ScrollView scrollview) {
     this.rootView = rootView;
-    this.idScroll = idScroll;
     this.registerButtonRegister = registerButtonRegister;
     this.registerEmail = registerEmail;
     this.registerFullName = registerFullName;
-    this.registerLinear1 = registerLinear1;
     this.registerPassword = registerPassword;
     this.registerSubTitle = registerSubTitle;
     this.registerTitle = registerTitle;
     this.registerUsername = registerUsername;
+    this.scrollview = scrollview;
   }
 
   @Override
@@ -94,14 +89,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.idScroll;
-      ScrollView idScroll = ViewBindings.findChildViewById(rootView, id);
-      if (idScroll == null) {
-        break missingId;
-      }
-
       id = R.id.register_button_register;
-      AppCompatButton registerButtonRegister = ViewBindings.findChildViewById(rootView, id);
+      Button registerButtonRegister = ViewBindings.findChildViewById(rootView, id);
       if (registerButtonRegister == null) {
         break missingId;
       }
@@ -115,12 +104,6 @@ public final class ActivityRegisterBinding implements ViewBinding {
       id = R.id.register_full_name;
       EditText registerFullName = ViewBindings.findChildViewById(rootView, id);
       if (registerFullName == null) {
-        break missingId;
-      }
-
-      id = R.id.register_linear1;
-      LinearLayout registerLinear1 = ViewBindings.findChildViewById(rootView, id);
-      if (registerLinear1 == null) {
         break missingId;
       }
 
@@ -148,9 +131,15 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((RelativeLayout) rootView, idScroll,
-          registerButtonRegister, registerEmail, registerFullName, registerLinear1,
-          registerPassword, registerSubTitle, registerTitle, registerUsername);
+      id = R.id.scrollview;
+      ScrollView scrollview = ViewBindings.findChildViewById(rootView, id);
+      if (scrollview == null) {
+        break missingId;
+      }
+
+      return new ActivityRegisterBinding((RelativeLayout) rootView, registerButtonRegister,
+          registerEmail, registerFullName, registerPassword, registerSubTitle, registerTitle,
+          registerUsername, scrollview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
