@@ -6,52 +6,48 @@
     android:layout_height="match_parent"
     android:background="#FBFBFB"
     tools:context=".fragment.checkout">
-    <LinearLayout
-        android:id="@+id/head"
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="-30dp"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#5A3F12"
-        android:orientation="horizontal">
-
+        android:layout_height="100dp"
+        android:background="@drawable/roundstyle20dp"
+        android:backgroundTint="@color/colorprimary" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_with_radiusnew"
+        android:fontFamily="@font/nmedium"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="checkout"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
 
         <ImageView
             android:id="@+id/back"
             android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:padding="10dp"
             android:scaleX="-1"
             android:src="@drawable/arrow_forward"
-            app:tint="@color/white" />
+            app:tint="@color/colorprimary" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="20dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/nmedium"
-            android:text="Checkout "
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-    </LinearLayout>
-    <View
-        android:id="@+id/heading"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_below="@id/head"
-        android:layout_marginHorizontal="20dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/white" />
 
     <ImageView
         android:id="@+id/heading_photo"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_below="@id/head"
+        android:layout_below="@id/line"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/roundstyle"
+        android:background="@drawable/roundstyle20dp"
         android:backgroundTint="@color/bg_send"
         android:scaleType="center"
         android:src="@drawable/gosend" />
@@ -59,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/head"
+        android:layout_below="@+id/line"
         android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/heading_photo"
         android:fontFamily="@font/nbold"
@@ -72,7 +68,7 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/heading"
+        android:layout_below="@+id/view"
         android:layout_marginTop="20dp"
         android:background="@color/underline" />
 
@@ -80,7 +76,7 @@
         android:id="@+id/addres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/line"
+        android:layout_below="@+id/heading_photo"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="5dp"
         android:fontFamily="@font/nbold"
@@ -96,7 +92,6 @@
         android:layout_height="98dp"
         android:layout_below="@id/addres"
         android:layout_marginHorizontal="20dp"
-        android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white" />
 
     <LinearLayout

@@ -16,12 +16,16 @@
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_help.xml"
     },
     {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_questionmark.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/questionmark.xml"
+    },
+    {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_fragment_profile.xml.flat",
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_profile.xml"
     },
     {
-        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_questionmark.xml.flat",
-        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/questionmark.xml"
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_roundstyle20dp.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/drawable/roundstyle20dp.xml"
     },
     {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_logout.xml.flat",
@@ -168,8 +172,20 @@
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_cart.xml"
     },
     {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_fragment_order.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_order.xml"
+    },
+    {
+        "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/layout_holder_order_item.xml.flat",
+        "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/holder_order_item.xml"
+    },
+    {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.kofico.app-debug-38:/layout_holder_cart_item.xml.flat",
+        "source": "com.example.kofico.app-main-40:/layout/holder_cart_item.xml"
     },
     {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_userphoto.xml.flat",
@@ -214,10 +230,6 @@
     {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.kofico.app-debug-38:/layout_activity_login.xml.flat",
-        "source": "com.example.kofico.app-main-40:/layout/activity_login.xml"
     },
     {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-debug-38:/drawable_bg.xml.flat",

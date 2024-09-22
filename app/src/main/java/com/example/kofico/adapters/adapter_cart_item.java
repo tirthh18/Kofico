@@ -6,85 +6,77 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.kofico.R;
 import com.example.kofico.models.item_home;
 
-import java.util.AbstractMap;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class adapter_cart_item extends RecyclerView.Adapter<adapter_cart_item.ViewHolder> {
-    private List<Map.Entry<item_home, Integer>> cartItemList;
+public class adapter_cart_item extends RecyclerView.Adapter<adapter_cart_item.CartViewHolder> {
+    private List<Map.Entry<item_home, Integer>> cartItems;
+    private adapter_dbhelper dbhelper;
+    private String currentUserId;
+    private Runnable refreshCallback;
 
-    public adapter_cart_item(Map<item_home, Integer> cartItems) {
-        this.cartItemList = new ArrayList<>(cartItems.entrySet());
+    public adapter_cart_item(List<Map.Entry<item_home, Integer>> cartItems, adapter_dbhelper dbhelper,
+                             String currentUserId, Runnable refreshCallback) {
+        this.cartItems = cartItems;
+        this.dbhelper = dbhelper;
+        this.currentUserId = currentUserId;
+        this.refreshCallback = refreshCallback;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.holder_cart_item, parent, false);
-        return new ViewHolder(view);
+        return new CartViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Map.Entry<item_home, Integer> entry = cartItemList.get(position);
-        item_home currentItem = entry.getKey();
+    public void onBindViewHolder(@NonNull CartViewHolder holder, int position) {
+        Map.Entry<item_home, Integer> entry = cartItems.get(position);
+        item_home item = entry.getKey();
         int quantity = entry.getValue();
 
-        // Set item data
-        holder.titleTextView.setText(currentItem.getTitle());
-        holder.priceTextView.setText(currentItem.getPrice());
-        holder.imageView.setImageResource(currentItem.getImageResId());
+        holder.titleTextView.setText(item.getTitle());
+        holder.quantityTextView.setText(String.valueOf(quantity));
+        holder.priceTextView.setText(item.getPrice());
+        holder.imageView.setImageResource(item.getImageResId());
 
-        // Set the initial quantity
-        holder.itemQuantityTextView.setText(String.valueOf(quantity));
-
-        // Increase button logic
         holder.increaseButton.setOnClickListener(v -> {
-            int currentQuantity = Integer.parseInt(holder.itemQuantityTextView.getText().toString());
-            currentQuantity++;
-            holder.itemQuantityTextView.setText(String.valueOf(currentQuantity));
-            cartItemList.set(position, new AbstractMap.SimpleEntry<>(currentItem, currentQuantity));
+            dbhelper.updateCartQuantity(currentUserId, item.getItemId(), 1); // Update quantity in DB
+            refreshCallback.run(); // Refresh cart items
         });
 
-        // Decrease button logic
         holder.decreaseButton.setOnClickListener(v -> {
-            int currentQuantity = Integer.parseInt(holder.itemQuantityTextView.getText().toString());
-            if (currentQuantity > 1) {
-                currentQuantity--;
-                holder.itemQuantityTextView.setText(String.valueOf(currentQuantity));
-                cartItemList.set(position, new AbstractMap.SimpleEntry<>(currentItem, currentQuantity));
-            }
+            dbhelper.updateCartQuantity(currentUserId, item.getItemId(), -1); // Update quantity in DB
+            refreshCallback.run(); // Refresh cart items
         });
     }
 
     @Override
     public int getItemCount() {
-        return cartItemList.size();
+        return cartItems.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView imageView;
-        public TextView titleTextView;
-        public TextView priceTextView;
-        public TextView itemQuantityTextView;
-        public Button decreaseButton;
-        public Button increaseButton;
+    public static class CartViewHolder extends RecyclerView.ViewHolder {
+        TextView titleTextView, quantityTextView, priceTextView;
+        ImageView imageView;
+        Button increaseButton, decreaseButton;
 
-        public ViewHolder(@NonNull View itemView) {
+        public CartViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.image);
             titleTextView = itemView.findViewById(R.id.name);
+            quantityTextView = itemView.findViewById(R.id.quantity);
             priceTextView = itemView.findViewById(R.id.price);
-            itemQuantityTextView = itemView.findViewById(R.id.item_no);
-            decreaseButton = itemView.findViewById(R.id.decrease_button);
+            imageView = itemView.findViewById(R.id.image);
             increaseButton = itemView.findViewById(R.id.increase_button);
+            decreaseButton = itemView.findViewById(R.id.decrease_button);
         }
     }
 }
-

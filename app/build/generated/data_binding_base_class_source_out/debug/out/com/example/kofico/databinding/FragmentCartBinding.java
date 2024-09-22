@@ -36,15 +36,19 @@ public final class FragmentCartBinding implements ViewBinding {
   @NonNull
   public final TextView tvTitle;
 
+  @NonNull
+  public final View view;
+
   private FragmentCartBinding(@NonNull RelativeLayout rootView, @NonNull Button checkout,
       @NonNull RecyclerView rvCarts, @NonNull TextView tvPrice, @NonNull TextView tvSubtotal,
-      @NonNull TextView tvTitle) {
+      @NonNull TextView tvTitle, @NonNull View view) {
     this.rootView = rootView;
     this.checkout = checkout;
     this.rvCarts = rvCarts;
     this.tvPrice = tvPrice;
     this.tvSubtotal = tvSubtotal;
     this.tvTitle = tvTitle;
+    this.view = view;
   }
 
   @Override
@@ -104,8 +108,14 @@ public final class FragmentCartBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.view;
+      View view = ViewBindings.findChildViewById(rootView, id);
+      if (view == null) {
+        break missingId;
+      }
+
       return new FragmentCartBinding((RelativeLayout) rootView, checkout, rvCarts, tvPrice,
-          tvSubtotal, tvTitle);
+          tvSubtotal, tvTitle, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

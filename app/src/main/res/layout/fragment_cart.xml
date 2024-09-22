@@ -6,16 +6,28 @@
     android:background="#FBFBFB"
     tools:context=".fragment.cart">
 
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="-30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/roundstyle20dp"
+        android:backgroundTint="@color/colorprimary" />
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:fontFamily="@font/nbold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_with_radiusnew"
+        android:fontFamily="@font/nmedium"
         android:gravity="center"
+        android:padding="13dp"
         android:text="Basket"
         android:textColor="@color/black"
-        android:textSize="30dp" />
+        android:textSize="19dp"
+        android:textStyle="bold"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_carts"

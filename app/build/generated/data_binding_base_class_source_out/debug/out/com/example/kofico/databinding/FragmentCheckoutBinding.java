@@ -33,12 +33,6 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   public final ImageView back;
 
   @NonNull
-  public final LinearLayout head;
-
-  @NonNull
-  public final View heading;
-
-  @NonNull
   public final ImageView headingPhoto;
 
   @NonNull
@@ -68,18 +62,22 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   @NonNull
   public final TextView subtotal;
 
+  @NonNull
+  public final TextView tvTitle;
+
+  @NonNull
+  public final View view;
+
   private FragmentCheckoutBinding(@NonNull RelativeLayout rootView, @NonNull TextView addres,
-      @NonNull View addresDetail, @NonNull ImageView back, @NonNull LinearLayout head,
-      @NonNull View heading, @NonNull ImageView headingPhoto, @NonNull View line,
-      @NonNull View line2, @NonNull View line3, @NonNull LinearLayout ly1,
+      @NonNull View addresDetail, @NonNull ImageView back, @NonNull ImageView headingPhoto,
+      @NonNull View line, @NonNull View line2, @NonNull View line3, @NonNull LinearLayout ly1,
       @NonNull AppCompatButton makeOrder, @NonNull TextView price,
-      @NonNull RecyclerView recylerView, @NonNull TextView shopName, @NonNull TextView subtotal) {
+      @NonNull RecyclerView recylerView, @NonNull TextView shopName, @NonNull TextView subtotal,
+      @NonNull TextView tvTitle, @NonNull View view) {
     this.rootView = rootView;
     this.addres = addres;
     this.addresDetail = addresDetail;
     this.back = back;
-    this.head = head;
-    this.heading = heading;
     this.headingPhoto = headingPhoto;
     this.line = line;
     this.line2 = line2;
@@ -90,6 +88,8 @@ public final class FragmentCheckoutBinding implements ViewBinding {
     this.recylerView = recylerView;
     this.shopName = shopName;
     this.subtotal = subtotal;
+    this.tvTitle = tvTitle;
+    this.view = view;
   }
 
   @Override
@@ -134,18 +134,6 @@ public final class FragmentCheckoutBinding implements ViewBinding {
       id = R.id.back;
       ImageView back = ViewBindings.findChildViewById(rootView, id);
       if (back == null) {
-        break missingId;
-      }
-
-      id = R.id.head;
-      LinearLayout head = ViewBindings.findChildViewById(rootView, id);
-      if (head == null) {
-        break missingId;
-      }
-
-      id = R.id.heading;
-      View heading = ViewBindings.findChildViewById(rootView, id);
-      if (heading == null) {
         break missingId;
       }
 
@@ -209,9 +197,21 @@ public final class FragmentCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.view;
+      View view = ViewBindings.findChildViewById(rootView, id);
+      if (view == null) {
+        break missingId;
+      }
+
       return new FragmentCheckoutBinding((RelativeLayout) rootView, addres, addresDetail, back,
-          head, heading, headingPhoto, line, line2, line3, ly1, makeOrder, price, recylerView,
-          shopName, subtotal);
+          headingPhoto, line, line2, line3, ly1, makeOrder, price, recylerView, shopName, subtotal,
+          tvTitle, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

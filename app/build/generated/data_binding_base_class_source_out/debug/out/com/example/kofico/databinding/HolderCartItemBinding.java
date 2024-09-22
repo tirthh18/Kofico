@@ -31,24 +31,24 @@ public final class HolderCartItemBinding implements ViewBinding {
   public final Button increaseButton;
 
   @NonNull
-  public final TextView itemNo;
-
-  @NonNull
   public final TextView name;
 
   @NonNull
   public final TextView price;
 
+  @NonNull
+  public final TextView quantity;
+
   private HolderCartItemBinding(@NonNull CardView rootView, @NonNull Button decreaseButton,
-      @NonNull ImageView image, @NonNull Button increaseButton, @NonNull TextView itemNo,
-      @NonNull TextView name, @NonNull TextView price) {
+      @NonNull ImageView image, @NonNull Button increaseButton, @NonNull TextView name,
+      @NonNull TextView price, @NonNull TextView quantity) {
     this.rootView = rootView;
     this.decreaseButton = decreaseButton;
     this.image = image;
     this.increaseButton = increaseButton;
-    this.itemNo = itemNo;
     this.name = name;
     this.price = price;
+    this.quantity = quantity;
   }
 
   @Override
@@ -96,12 +96,6 @@ public final class HolderCartItemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.item_no;
-      TextView itemNo = ViewBindings.findChildViewById(rootView, id);
-      if (itemNo == null) {
-        break missingId;
-      }
-
       id = R.id.name;
       TextView name = ViewBindings.findChildViewById(rootView, id);
       if (name == null) {
@@ -114,8 +108,14 @@ public final class HolderCartItemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.quantity;
+      TextView quantity = ViewBindings.findChildViewById(rootView, id);
+      if (quantity == null) {
+        break missingId;
+      }
+
       return new HolderCartItemBinding((CardView) rootView, decreaseButton, image, increaseButton,
-          itemNo, name, price);
+          name, price, quantity);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

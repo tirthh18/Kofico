@@ -56,9 +56,6 @@ public class adapter_home_item extends RecyclerView.Adapter<adapter_home_item.Vi
 
         holder.addtocart.setOnClickListener(v -> {
             if (onAddToCartClickListener != null) {
-                // Show Toast message when item is added to cart
-                Toast.makeText(holder.itemView.getContext(), coffeeItem.getTitle() + " added to cart", Toast.LENGTH_SHORT).show();
-
                 // Trigger the listener callback
                 onAddToCartClickListener.onAddToCart(coffeeItem);
             }

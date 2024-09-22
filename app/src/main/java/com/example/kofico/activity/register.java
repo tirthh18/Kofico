@@ -12,48 +12,51 @@ import com.example.kofico.adapters.adapter_dbhelper;
 
 public class register extends AppCompatActivity {
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_register);
-            EditText regName=findViewById(R.id.register_full_name);
-            EditText regUsername=findViewById(R.id.register_username);
-            EditText regEmail=findViewById(R.id.register_email);
-            EditText regPassword=findViewById(R.id.register_password);
-            Button signup=findViewById(R.id.register_button_register);
-            adapter_dbhelper DB=new adapter_dbhelper(this);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
 
-            signup.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    String name=regName.getText().toString();
-                    String username=regUsername.getText().toString();
-                    String email=regEmail.getText().toString();
-                    String password=regPassword.getText().toString();
-                    if(username.equals("")||name.equals("")||password.equals("")||email.equals("")||password.equals("")){
-                        Toast.makeText(register.this,"please enter all the details",Toast.LENGTH_SHORT).show();
-                    }
-                    else{
-                        Boolean checkuser=DB.checkusername(name,password);
-                        if(checkuser==false){
-                            Boolean insert=DB.insertData(username,name,password,email);
-                            if(insert==true){
-                                Toast.makeText(getApplicationContext(),"register successfully,please login now",Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(register.this,login.class);
-                                startActivity(intent);
-                            }
-                            else{
-                                Toast.makeText(register.this,"register failed",Toast.LENGTH_SHORT).show();
+        // Initialize EditText fields and Button
+        EditText regName = findViewById(R.id.register_full_name);
+        EditText regUsername = findViewById(R.id.register_username);
+        EditText regEmail = findViewById(R.id.register_email);
+        EditText regPassword = findViewById(R.id.register_password);
+        Button signup = findViewById(R.id.register_button_register);
 
-                            }
+        // Initialize Database Helper
+        adapter_dbhelper DB = new adapter_dbhelper(this);
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Get user input from fields
+                String name = regName.getText().toString();
+                String username = regUsername.getText().toString();
+                String email = regEmail.getText().toString();
+                String password = regPassword.getText().toString();
+
+                // Check if any field is empty
+                if (username.equals("") || name.equals("") || password.equals("") || email.equals("")) {
+                    Toast.makeText(register.this, "Please enter all the details", Toast.LENGTH_SHORT).show();
+                } else {
+                    // Check if the username already exists in the database
+                    Boolean checkUser = DB.checkusername(username);
+                    if (!checkUser) {
+                        // If user doesn't exist, insert new user data
+                        Boolean insert = DB.insertData(username, name, password, email);
+                        if (insert) {
+                            Toast.makeText(getApplicationContext(), "Registered successfully, please login now", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(register.this, login.class);
+                            startActivity(intent);
+                        } else {
+                            Toast.makeText(register.this, "Registration failed", Toast.LENGTH_SHORT).show();
                         }
-                        else{
-                            Toast.makeText(register.this,"user already exist",Toast.LENGTH_SHORT).show();
-
-                        }
+                    } else {
+                        Toast.makeText(register.this, "User already exists", Toast.LENGTH_SHORT).show();
                     }
                 }
-            });
-        }
-
+            }
+        });
     }
+}

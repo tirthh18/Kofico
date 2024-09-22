@@ -15,13 +15,13 @@
     </style>
 
     <style name="ButtonCoklat">
-        <item name="android:background">@drawable/roundstyle</item>
+        <item name="android:background">@drawable/roundstyle20dp</item>
         <item name="android:backgroundTint">@color/barn_red</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="ButtonGrey">
-        <item name="android:background">@drawable/roundstyle</item>
+        <item name="android:background">@drawable/roundstyle20dp</item>
         <item name="android:backgroundTint">@color/dark_grey</item>
         <item name="android:enabled">false</item>
         <item name="android:textColor">@color/white</item>

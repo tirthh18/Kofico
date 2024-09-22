@@ -28,13 +28,12 @@ public class profile extends Fragment {
     private View help;
     private View security;
     private View logout;
-    user user;
+    private user user;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dbHelper = new adapter_dbhelper(getActivity());
-        pref = getActivity().getSharedPreferences("user_details", MODE_PRIVATE);
     }
 
     @Override
@@ -52,6 +51,7 @@ public class profile extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         getUserInfo();
         help.setOnClickListener(v -> {
             startActivity( new Intent(getActivity(), com.example.kofico.activity.profile.help.class));
@@ -69,6 +69,7 @@ public class profile extends Fragment {
     }
 
     private void getUserInfo() {
+        pref = getActivity().getSharedPreferences("user_details", MODE_PRIVATE);
         String uname = pref.getString("username", null);
         if (uname != null) {
             user = dbHelper.getUserDetails(uname);
@@ -84,4 +85,5 @@ public class profile extends Fragment {
             Toast.makeText(getActivity(), "No username found", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

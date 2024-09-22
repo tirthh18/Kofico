@@ -1,17 +1,26 @@
 package com.example.kofico.models;
 
 public class user {
-
+    private int userid;
     private String username;
     private String name;
     private String password;
     private String email;
 
-    public user(String username, String name, String password, String email) {
+    public user(int userid, String username, String name, String password, String email) {
+        this.userid = userid;
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
+    }
+
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
     }
 
     public String getUsername() {
@@ -45,5 +54,4 @@ public class user {
     public void setEmail(String email) {
         this.email = email;
     }
-
 }

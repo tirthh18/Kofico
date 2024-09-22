@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:background="#F5F5F5">
         <ImageView
             android:id="@+id/image"
             android:layout_width="140dp"
@@ -54,7 +56,7 @@
 
         <TextView
             android:fontFamily="@font/nmedium"
-            android:id="@+id/item_no"
+            android:id="@+id/quantity"
             android:layout_width="20dp"
             android:layout_height="match_parent"
             android:gravity="center"
