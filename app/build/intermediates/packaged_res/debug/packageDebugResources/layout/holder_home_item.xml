@@ -31,7 +31,7 @@
             android:fontFamily="@font/nbold"
             android:text="Arabica Coffe"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -55,14 +55,6 @@
                 android:text="4.8"
                 android:textColor="@color/black" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/review"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_margin="3dp"-->
-<!--                android:fontFamily="@font/nmedium"-->
-<!--                android:paddingLeft="10dp"-->
-<!--                android:text="1.3K reviews" />-->
 
             <TextView
                 android:id="@+id/price"

@@ -28,7 +28,7 @@
             android:padding="13dp"
             android:text="Coffee shop near me"
             android:textColor="@color/black"
-            android:textSize="19dp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView

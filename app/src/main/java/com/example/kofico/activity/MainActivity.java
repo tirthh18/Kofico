@@ -9,6 +9,7 @@ import com.example.kofico.R;
 import com.example.kofico.databinding.ActivityMainBinding;
 import com.example.kofico.fragment.cart;
 import com.example.kofico.fragment.home;
+import com.example.kofico.fragment.order;
 import com.example.kofico.fragment.profile;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             } else if (item.getItemId() == R.id.profilefragment) {
                 replaceFragment(new profile());
+                return true;
+            } else if (item.getItemId() == R.id.orderfragment) {
+                replaceFragment(new order());
                 return true;
             } else if (item.getItemId() == R.id.cartfragment) {
                 replaceFragment(new cart());

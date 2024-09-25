@@ -71,19 +71,13 @@ public class profile extends Fragment {
     private void getUserInfo() {
         pref = getActivity().getSharedPreferences("user_details", MODE_PRIVATE);
         String uname = pref.getString("username", null);
-        if (uname != null) {
             user = dbHelper.getUserDetails(uname);
             if (user != null) {
                 profileName.setText(user.getName());
                 profileEmail.setText(user.getEmail());
             } else {
-                // Handle the case when user is null (e.g., show an error message)
                 Toast.makeText(getActivity(), "User not found", Toast.LENGTH_SHORT).show();
             }
-        } else {
-            // Handle the case when username is null (e.g., show an error message)
-            Toast.makeText(getActivity(), "No username found", Toast.LENGTH_SHORT).show();
-        }
     }
 
 }

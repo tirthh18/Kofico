@@ -26,7 +26,7 @@
         android:padding="13dp"
         android:text="Basket"
         android:textColor="@color/black"
-        android:textSize="19dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -49,7 +49,7 @@
         android:fontFamily="@font/nbold"
         android:text="Subtotal"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/tv_price"
@@ -58,11 +58,11 @@
         android:layout_above="@id/checkout"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
-        android:fontFamily="@font/nmedium"
+        android:fontFamily="@font/nbold"
         android:gravity="right"
-        android:text="Rp 0"
+        android:text="Rs 0"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/checkout"
@@ -78,7 +78,7 @@
         android:text="Checkout"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="16dp" />
+        android:textSize="18dp" />
 
 
 </RelativeLayout>

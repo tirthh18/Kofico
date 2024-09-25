@@ -24,9 +24,9 @@
         android:fontFamily="@font/nmedium"
         android:gravity="center"
         android:padding="13dp"
-        android:text="checkout"
+        android:text="Checkout"
         android:textColor="@color/black"
-        android:textSize="19dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
         <ImageView
@@ -56,12 +56,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/line"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/heading_photo"
         android:fontFamily="@font/nbold"
         android:text="Deliver"
         android:textColor="@color/black"
-        android:textSize="22dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
     <View
@@ -82,7 +82,7 @@
         android:fontFamily="@font/nbold"
         android:text="Address"
         android:textColor="@color/black"
-        android:textSize="15dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
 
@@ -108,6 +108,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/nbold"
             android:text="Tirth "
+            android:textSize="18dp"
             android:textColor="@color/black" />
 
         <TextView
@@ -116,6 +117,7 @@
             android:layout_marginVertical="3dp"
             android:fontFamily="@font/nmedium"
             android:text="1234567890"
+            android:textSize="18dp"
             android:textColor="@color/black" />
 
         <TextView
@@ -124,6 +126,7 @@
             android:fontFamily="@font/nmedium"
             android:lines="2"
             android:text="A-2, maruti nandan bunglows, nadiad"
+            android:textSize="18dp"
             android:textColor="@color/black" />
 
     </LinearLayout>
@@ -146,10 +149,10 @@
         android:fontFamily="@font/nbold"
         android:text="Coffee Hall"
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyler_view"
+        android:id="@+id/rv_checkout"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_below="@+id/shop_name"
@@ -158,7 +161,7 @@
 
 
     <TextView
-        android:id="@+id/subtotal"
+        android:id="@+id/tv_subtotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/line3"
@@ -170,7 +173,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/tv_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/line3"
@@ -178,7 +181,7 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/nmedium"
         android:gravity="right"
-        android:text="Rp 0"
+        android:text="Rs 0"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
@@ -187,12 +190,12 @@
         android:id="@+id/line3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_above="@+id/make_order"
+        android:layout_above="@id/order"
         android:layout_marginBottom="8dp"
         android:background="@color/underline" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/make_order"
+        android:id="@+id/order"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -205,6 +208,6 @@
         android:text="Make an Order"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="16dp" />
+        android:textSize="18dp" />
 
 </RelativeLayout>

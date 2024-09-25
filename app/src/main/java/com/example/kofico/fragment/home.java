@@ -47,12 +47,12 @@ public class home extends Fragment {
         dbhelper = new adapter_dbhelper(getContext());
 
         coffeeItemList = new ArrayList<>();
-//        coffeeItemList.add(new item_home(1, R.drawable.ic_home, "Espresso", 4.5, "Rp 399"));
-//        coffeeItemList.add(new item_home(2, R.drawable.ic_home, "Latte", 4.8, "Rp 599"));
 
         // In onViewCreated, replace the hardcoded items with utility method
-        coffeeItemList.add(ItemUtils.fetchItemById(1)); // Espresso
-        coffeeItemList.add(ItemUtils.fetchItemById(2)); // Latte
+        for(int i=1;i<9;i++)
+        {
+            coffeeItemList.add(ItemUtils.fetchItemById(i)); // Espresso
+        }
         String currentUsername = getCurrentUser();
         Log.d("CurrentUserCheck", "Fetched current username: " + currentUsername);
 
@@ -68,7 +68,6 @@ public class home extends Fragment {
                         Toast.makeText(getContext(), "Failed to add to cart", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Log.d("UsernameCheck", "User ID not found for username: " + currentUsername);
                     Toast.makeText(getContext(), "User not found", Toast.LENGTH_SHORT).show();
                 }
             } else {

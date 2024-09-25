@@ -48,19 +48,19 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   public final LinearLayout ly1;
 
   @NonNull
-  public final AppCompatButton makeOrder;
+  public final AppCompatButton order;
 
   @NonNull
-  public final TextView price;
-
-  @NonNull
-  public final RecyclerView recylerView;
+  public final RecyclerView rvCheckout;
 
   @NonNull
   public final TextView shopName;
 
   @NonNull
-  public final TextView subtotal;
+  public final TextView tvPrice;
+
+  @NonNull
+  public final TextView tvSubtotal;
 
   @NonNull
   public final TextView tvTitle;
@@ -71,9 +71,9 @@ public final class FragmentCheckoutBinding implements ViewBinding {
   private FragmentCheckoutBinding(@NonNull RelativeLayout rootView, @NonNull TextView addres,
       @NonNull View addresDetail, @NonNull ImageView back, @NonNull ImageView headingPhoto,
       @NonNull View line, @NonNull View line2, @NonNull View line3, @NonNull LinearLayout ly1,
-      @NonNull AppCompatButton makeOrder, @NonNull TextView price,
-      @NonNull RecyclerView recylerView, @NonNull TextView shopName, @NonNull TextView subtotal,
-      @NonNull TextView tvTitle, @NonNull View view) {
+      @NonNull AppCompatButton order, @NonNull RecyclerView rvCheckout, @NonNull TextView shopName,
+      @NonNull TextView tvPrice, @NonNull TextView tvSubtotal, @NonNull TextView tvTitle,
+      @NonNull View view) {
     this.rootView = rootView;
     this.addres = addres;
     this.addresDetail = addresDetail;
@@ -83,11 +83,11 @@ public final class FragmentCheckoutBinding implements ViewBinding {
     this.line2 = line2;
     this.line3 = line3;
     this.ly1 = ly1;
-    this.makeOrder = makeOrder;
-    this.price = price;
-    this.recylerView = recylerView;
+    this.order = order;
+    this.rvCheckout = rvCheckout;
     this.shopName = shopName;
-    this.subtotal = subtotal;
+    this.tvPrice = tvPrice;
+    this.tvSubtotal = tvSubtotal;
     this.tvTitle = tvTitle;
     this.view = view;
   }
@@ -167,21 +167,15 @@ public final class FragmentCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.make_order;
-      AppCompatButton makeOrder = ViewBindings.findChildViewById(rootView, id);
-      if (makeOrder == null) {
+      id = R.id.order;
+      AppCompatButton order = ViewBindings.findChildViewById(rootView, id);
+      if (order == null) {
         break missingId;
       }
 
-      id = R.id.price;
-      TextView price = ViewBindings.findChildViewById(rootView, id);
-      if (price == null) {
-        break missingId;
-      }
-
-      id = R.id.recyler_view;
-      RecyclerView recylerView = ViewBindings.findChildViewById(rootView, id);
-      if (recylerView == null) {
+      id = R.id.rv_checkout;
+      RecyclerView rvCheckout = ViewBindings.findChildViewById(rootView, id);
+      if (rvCheckout == null) {
         break missingId;
       }
 
@@ -191,9 +185,15 @@ public final class FragmentCheckoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.subtotal;
-      TextView subtotal = ViewBindings.findChildViewById(rootView, id);
-      if (subtotal == null) {
+      id = R.id.tv_price;
+      TextView tvPrice = ViewBindings.findChildViewById(rootView, id);
+      if (tvPrice == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_subtotal;
+      TextView tvSubtotal = ViewBindings.findChildViewById(rootView, id);
+      if (tvSubtotal == null) {
         break missingId;
       }
 
@@ -210,7 +210,7 @@ public final class FragmentCheckoutBinding implements ViewBinding {
       }
 
       return new FragmentCheckoutBinding((RelativeLayout) rootView, addres, addresDetail, back,
-          headingPhoto, line, line2, line3, ly1, makeOrder, price, recylerView, shopName, subtotal,
+          headingPhoto, line, line2, line3, ly1, order, rvCheckout, shopName, tvPrice, tvSubtotal,
           tvTitle, view);
     }
     String missingId = rootView.getResources().getResourceName(id);

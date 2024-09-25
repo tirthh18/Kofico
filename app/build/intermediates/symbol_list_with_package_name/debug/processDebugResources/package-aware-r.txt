@@ -3443,6 +3443,7 @@ id info
 id invisible
 id inward
 id italic
+id item
 id item_touch_helper_previous_elevation
 id iv
 id iv_amogus
@@ -3468,7 +3469,6 @@ id lottie_layer_name
 id ly1
 id m3_side_sheet
 id main
-id make_order
 id marquee
 id masked
 id match_constraint
@@ -3548,6 +3548,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id num_items
 id off
 id on
 id onAttachStateChangeListener
@@ -3567,6 +3568,8 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id order
+id order_no
 id orderfragment
 id outline
 id outward
@@ -3582,8 +3585,6 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id pesanan_ed_total
-id pesanan_status
 id pin
 id position
 id postLayout
@@ -3599,7 +3600,6 @@ id radio
 id rating
 id ratio
 id rectangles
-id recyler_view
 id register_button_register
 id register_email
 id register_full_name
@@ -3620,7 +3620,7 @@ id rounded
 id row_index_key
 id rv_all_item
 id rv_carts
-id rv_pesanan
+id rv_checkout
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3682,11 +3682,11 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status
 id stop
 id stretch
 id submenuarrow
 id submit_area
-id subtotal
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3726,6 +3726,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id total_amount
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3738,12 +3739,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv_cost
 id tv_count
-id tv_list
+id tv_item_name
 id tv_login_button_register
-id tv_order
 id tv_price
+id tv_quantity
 id tv_sign_in
 id tv_subtotal
 id tv_title
@@ -3755,7 +3755,6 @@ id useLogo
 id v_circle
 id vertical_only
 id view
-id view1
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3915,6 +3914,7 @@ layout fragment_home
 layout fragment_order
 layout fragment_profile
 layout holder_cart_item
+layout holder_checkout
 layout holder_home_item
 layout holder_order_item
 layout ime_base_split_test_activity
