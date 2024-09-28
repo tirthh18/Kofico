@@ -14,19 +14,16 @@ import com.example.kofico.fragment.profile;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    public static ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot()); // Set the content view using the binding
+        setContentView(binding.getRoot());
 
-        // Initial fragment
         replaceFragment(new home());
-
         binding.bottomNavigationView.setBackground(null);
-
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.homefragment) {
                 replaceFragment(new home());
@@ -48,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(binding.frameLayout.getId(), fragment); // Use binding to access frameLayout
+        fragmentTransaction.replace(binding.frameLayout.getId(), fragment);
         fragmentTransaction.commit();
     }
 }

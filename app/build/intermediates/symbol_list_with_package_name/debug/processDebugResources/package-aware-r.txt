@@ -3177,6 +3177,14 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable p1
+drawable p2
+drawable p3
+drawable p4
+drawable p5
+drawable p6
+drawable p7
+drawable p8
 drawable questionmark
 drawable rating
 drawable roundstyle20dp
@@ -3443,7 +3451,6 @@ id info
 id invisible
 id inward
 id italic
-id item
 id item_touch_helper_previous_elevation
 id iv
 id iv_amogus
@@ -3548,7 +3555,6 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id num_items
 id off
 id on
 id onAttachStateChangeListener
@@ -3569,7 +3575,6 @@ id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
 id order
-id order_no
 id orderfragment
 id outline
 id outward
@@ -3682,7 +3687,6 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
-id status
 id stop
 id stretch
 id submenuarrow
@@ -3726,7 +3730,6 @@ id title_template
 id toggle
 id top
 id topPanel
-id total_amount
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3739,12 +3742,17 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_amount
 id tv_count
+id tv_date
+id tv_item
 id tv_item_name
 id tv_login_button_register
+id tv_order_no
 id tv_price
 id tv_quantity
 id tv_sign_in
+id tv_status
 id tv_subtotal
 id tv_title
 id unchecked

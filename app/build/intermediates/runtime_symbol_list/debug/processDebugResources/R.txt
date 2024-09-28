@@ -3176,6 +3176,14 @@ int drawable notification_template_icon_bg 0x7f0800ec
 int drawable notification_template_icon_low_bg 0x7f0800ed
 int drawable notification_tile_bg 0x7f0800ee
 int drawable notify_panel_notification_icon_bg 0x7f0800ef
+int drawable p1 0x7f0800fd
+int drawable p2 0x7f0800fc
+int drawable p3 0x7f0800fe
+int drawable p4 0x7f0800ff
+int drawable p5 0x7f080100
+int drawable p6 0x7f080101
+int drawable p7 0x7f080102
+int drawable p8 0x7f080103
 int drawable questionmark 0x7f0800f0
 int drawable rating 0x7f0800f1
 int drawable roundstyle20dp 0x7f0800fa
@@ -3442,7 +3450,6 @@ int id info 0x7f0a00fb
 int id invisible 0x7f0a00fc
 int id inward 0x7f0a00fd
 int id italic 0x7f0a00fe
-int id item 0x7f0a0258
 int id item_touch_helper_previous_elevation 0x7f0a0100
 int id iv 0x7f0a0101
 int id iv_amogus 0x7f0a0102
@@ -3547,7 +3554,6 @@ int id north 0x7f0a0165
 int id notification_background 0x7f0a0166
 int id notification_main_column 0x7f0a0167
 int id notification_main_column_container 0x7f0a0168
-int id num_items 0x7f0a0252
 int id off 0x7f0a0169
 int id on 0x7f0a016a
 int id onAttachStateChangeListener 0x7f0a016b
@@ -3568,7 +3574,6 @@ int id open_search_view_status_bar_spacer 0x7f0a0179
 int id open_search_view_toolbar 0x7f0a017a
 int id open_search_view_toolbar_container 0x7f0a017b
 int id order 0x7f0a024a
-int id order_no 0x7f0a0254
 int id orderfragment 0x7f0a017c
 int id outline 0x7f0a017d
 int id outward 0x7f0a017e
@@ -3681,7 +3686,6 @@ int id startToEnd 0x7f0a01ea
 int id startVertical 0x7f0a01eb
 int id staticLayout 0x7f0a01ec
 int id staticPostLayout 0x7f0a01ed
-int id status 0x7f0a0256
 int id stop 0x7f0a01ee
 int id stretch 0x7f0a01ef
 int id submenuarrow 0x7f0a01f0
@@ -3725,7 +3729,6 @@ int id title_template 0x7f0a0216
 int id toggle 0x7f0a0217
 int id top 0x7f0a0218
 int id topPanel 0x7f0a0219
-int id total_amount 0x7f0a0257
 int id touch_outside 0x7f0a021a
 int id transitionToEnd 0x7f0a021b
 int id transitionToStart 0x7f0a021c
@@ -3738,12 +3741,17 @@ int id transition_position 0x7f0a0222
 int id transition_scene_layoutid_cache 0x7f0a0223
 int id transition_transform 0x7f0a0224
 int id triangle 0x7f0a0225
+int id tv_amount 0x7f0a0259
 int id tv_count 0x7f0a0227
+int id tv_date 0x7f0a025a
+int id tv_item 0x7f0a025b
 int id tv_item_name 0x7f0a024c
 int id tv_login_button_register 0x7f0a0229
+int id tv_order_no 0x7f0a025c
 int id tv_price 0x7f0a022b
 int id tv_quantity 0x7f0a024d
 int id tv_sign_in 0x7f0a022c
+int id tv_status 0x7f0a025d
 int id tv_subtotal 0x7f0a022d
 int id tv_title 0x7f0a022e
 int id unchecked 0x7f0a022f

@@ -19,11 +19,11 @@ import java.util.Map;
 public class adapter_cart_item extends RecyclerView.Adapter<adapter_cart_item.CartViewHolder> {
     private List<Map.Entry<item_home, Integer>> cartItems;
     private adapter_dbhelper dbhelper;
-    private String currentUserId;
+    private int currentUserId;
     private Runnable refreshCallback;
 
     public adapter_cart_item(List<Map.Entry<item_home, Integer>> cartItems, adapter_dbhelper dbhelper,
-                             String currentUserId, Runnable refreshCallback) {
+                             int currentUserId, Runnable refreshCallback) {
         this.cartItems = cartItems;
         this.dbhelper = dbhelper;
         this.currentUserId = currentUserId;
@@ -49,13 +49,13 @@ public class adapter_cart_item extends RecyclerView.Adapter<adapter_cart_item.Ca
         holder.imageView.setImageResource(item.getImageResId());
 
         holder.increaseButton.setOnClickListener(v -> {
-            dbhelper.updateCartQuantity(currentUserId, item.getItemId(), 1); // Update quantity in DB
-            refreshCallback.run(); // Refresh cart items
+            dbhelper.insertCartData(currentUserId, item.getItemId(), 1); // Update quantity in DB
+            refreshCallback.run();
         });
 
         holder.decreaseButton.setOnClickListener(v -> {
-            dbhelper.updateCartQuantity(currentUserId, item.getItemId(), -1); // Update quantity in DB
-            refreshCallback.run(); // Refresh cart items
+            dbhelper.insertCartData(currentUserId, item.getItemId(), -1); // Update quantity in DB
+            refreshCallback.run();
         });
     }
 

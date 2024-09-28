@@ -32,6 +32,10 @@
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/holder_cart_item.xml"
     },
     {
+        "merged": "com.example.kofico.app-mergeDebugResources-37:/layout/holder_home_item.xml",
+        "source": "com.example.kofico.app-main-40:/layout/holder_home_item.xml"
+    },
+    {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-mergeDebugResources-37:/layout/activity_main.xml",
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/activity_main.xml"
     },
@@ -50,10 +54,6 @@
     {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-mergeDebugResources-37:/layout/fragment_home.xml",
         "source": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-main-40:/layout/fragment_home.xml"
-    },
-    {
-        "merged": "com.example.kofico.app-mergeDebugResources-37:/layout/holder_order_item.xml",
-        "source": "com.example.kofico.app-main-40:/layout/holder_order_item.xml"
     },
     {
         "merged": "/Users/tirth/.gradle/daemon/8.7/com.example.kofico.app-mergeDebugResources-37:/layout/fragment_profile.xml",

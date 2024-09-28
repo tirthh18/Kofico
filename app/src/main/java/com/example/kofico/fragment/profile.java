@@ -45,7 +45,6 @@ public class profile extends Fragment {
         security = view.findViewById(R.id.security);
         logout = view.findViewById(R.id.logout);
         return view;
-//        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
     @Override

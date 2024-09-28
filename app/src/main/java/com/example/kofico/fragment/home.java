@@ -48,7 +48,6 @@ public class home extends Fragment {
 
         coffeeItemList = new ArrayList<>();
 
-        // In onViewCreated, replace the hardcoded items with utility method
         for(int i=1;i<9;i++)
         {
             coffeeItemList.add(ItemUtils.fetchItemById(i)); // Espresso

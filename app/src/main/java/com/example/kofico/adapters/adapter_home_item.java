@@ -42,21 +42,12 @@ public class adapter_home_item extends RecyclerView.Adapter<adapter_home_item.Vi
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         item_home coffeeItem = coffeeItemList.get(position);
 
-        // Load image using Glide
-        Glide.with(holder.itemView.getContext())
-                .load(coffeeItem.getImageResId())
-                .override(215, 240) // Set fixed dimensions for images
-                .centerCrop()        // Ensures proper scaling
-                .placeholder(R.drawable.ic_cart) // Placeholder image
-                .into(holder.imageView);
-
+        holder.imageView.setImageResource(coffeeItem.getImageResId());
         holder.titleTextView.setText(coffeeItem.getTitle());
         holder.ratingTextView.setText(String.valueOf(coffeeItem.getRating()));
         holder.priceTextView.setText(coffeeItem.getPrice());
-
         holder.addtocart.setOnClickListener(v -> {
             if (onAddToCartClickListener != null) {
-                // Trigger the listener callback
                 onAddToCartClickListener.onAddToCart(coffeeItem);
             }
         });

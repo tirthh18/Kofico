@@ -179,7 +179,7 @@
         android:layout_above="@id/line3"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
-        android:fontFamily="@font/nmedium"
+        android:fontFamily="@font/nbold"
         android:gravity="right"
         android:text="Rs 0"
         android:textColor="@color/black"

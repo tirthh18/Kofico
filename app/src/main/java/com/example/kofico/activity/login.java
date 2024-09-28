@@ -37,9 +37,8 @@ public class login extends AppCompatActivity {
         login_btn = findViewById(R.id.login_button_login);
         pref = getSharedPreferences("user_details", MODE_PRIVATE);
         intent = new Intent(login.this, MainActivity.class);
-        dbhelper = new adapter_dbhelper(this); // Initialize dbhelper
+        dbhelper = new adapter_dbhelper(this);
 
-        // Auto-login if user is already saved
         if (pref.contains("username") && pref.contains("password")) {
             startActivity(intent);
         }
@@ -60,14 +59,15 @@ public class login extends AppCompatActivity {
 
                 if (user.isEmpty() || pass.isEmpty()) {
                     Toast.makeText(login.this, "Please enter all the details", Toast.LENGTH_SHORT).show();
-                } else {
-                    Boolean checkuserpass = dbhelper.checkUserLogin(user, pass);  // Use dbhelper instance
-
+                }
+                else {
+                    Boolean checkuserpass = dbhelper.checkUserLogin(user, pass);
                     if (checkuserpass) {
-                        savePreference(); // Save user details
+                        savePreference();
                         Toast.makeText(login.this, "Login successful", Toast.LENGTH_SHORT).show();
                         startActivity(intent);
-                    } else {
+                    }
+                    else {
                         Toast.makeText(login.this, "Invalid credentials, please try again or sign up", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -76,11 +76,11 @@ public class login extends AppCompatActivity {
     }
 
     void savePreference() {
-        int currentUserId = dbhelper.getUserId(user); // Get user ID from dbhelper
+        int currentUserId = dbhelper.getUserId(user);
         SharedPreferences.Editor editor = pref.edit();
-        editor.putInt("userid", currentUserId); // Save user ID
-        editor.putString("username", user); // Save username
-        editor.putString("password", pass); // Save password
-        editor.apply(); // Use apply for asynchronous saving
+        editor.putInt("userid", currentUserId);
+        editor.putString("username", user);
+        editor.putString("password", pass);
+        editor.apply();
     }
 }

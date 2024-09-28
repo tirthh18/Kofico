@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.kofico.R;
+import com.example.kofico.activity.MainActivity;
 import com.example.kofico.adapters.adapter_cart_item;
 import com.example.kofico.adapters.adapter_checkout_item;
 import com.example.kofico.adapters.adapter_dbhelper;
@@ -32,16 +33,17 @@ import java.util.Map;
 public class checkout extends Fragment {
     private RecyclerView recyclerView;
     private adapter_checkout_item adapter;
-    private TextView subtotalTextView;
+    private TextView totalTextView;
     private adapter_dbhelper dbhelper;
     private int currentUserId;
-    private Button order ;
+    private Button make_an_order ;
     private ImageView imageView;
+    String total;
 
-    public static checkout newInstance(String subtotal) {
+    public static checkout newInstance(String total) {
         checkout fragment = new checkout();
         Bundle args = new Bundle();
-        args.putString("subtotal", subtotal);
+        args.putString("total", total);
         fragment.setArguments(args);
         return fragment;
     }
@@ -57,15 +59,14 @@ public class checkout extends Fragment {
 
         recyclerView = view.findViewById(R.id.rv_checkout);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        subtotalTextView = view.findViewById(R.id.tv_price);
-        order = view.findViewById(R.id.order);
+        totalTextView = view.findViewById(R.id.tv_price);
+        make_an_order = view.findViewById(R.id.order);
         dbhelper = new adapter_dbhelper(getContext());
         imageView = view.findViewById(R.id.back);
 
         if (getArguments() != null) {
-            String subtotal = getArguments().getString("subtotal");
-            subtotalTextView.setText(subtotal); // Set the subtotal text
-
+            total = getArguments().getString("total");
+            totalTextView.setText(total);
         }
 
         currentUserId = getCurrentUserId();
@@ -81,16 +82,25 @@ public class checkout extends Fragment {
             }
         });
 
-        order.setOnClickListener(v -> {
+        make_an_order.setOnClickListener(v -> {
             try {
-                boolean orderSuccess = dbhelper.insertOrder(currentUserId);
+                boolean orderSuccess = dbhelper.insertOrder(currentUserId,total);
                 if (orderSuccess) {
+                    // Clear the cart after successfully placing an order
+                    dbhelper.clearCartForUser(currentUserId);
+
                     Toast.makeText(getContext(), "Order placed successfully!", Toast.LENGTH_SHORT).show();
                     Fragment order = new order();
                     FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                     transaction.replace(R.id.frame_layout, order);
                     transaction.addToBackStack(null);
                     transaction.commit();
+
+
+                    MainActivity.binding.bottomNavigationView.getMenu().getItem(2).setChecked(true);
+
+
+
                 } else {
                     Toast.makeText(getContext(), "No items in the cart to place an order.", Toast.LENGTH_SHORT).show();
                 }
@@ -98,15 +108,13 @@ public class checkout extends Fragment {
                 Toast.makeText(getContext(), "Invalid user ID format.", Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
     private int getCurrentUserId() {
         SharedPreferences pref = getActivity().getSharedPreferences("user_details", MODE_PRIVATE);
         return pref.getInt("userid", -1); // Change this to -1 or a default value
     }
     private void refreshCartItems() {
-        List<Map.Entry<item_home, Integer>> sortedCartItems = dbhelper.getSortedCartItems(String.valueOf(currentUserId));
+        List<Map.Entry<item_home, Integer>> sortedCartItems = dbhelper.getSortedCartItems(currentUserId);
         adapter = new adapter_checkout_item(sortedCartItems, dbhelper, String.valueOf(currentUserId), this::refreshCartItems);
         recyclerView.setAdapter(adapter);
     }
